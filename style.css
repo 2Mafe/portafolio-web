@@ -27,9 +27,9 @@ html{
     padding: 15px 20px;
 }
 .contenedor-header header .logo a{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 36px;
-    color: #ccd0cf;
+    color: #1CB698;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -112,7 +112,7 @@ html{
 }
 
 .aboutme{
-    background-color: #11212d;
+    background-color: #06141B;
     color: #ccd0cf;
     padding: 50px 20px;
 }
@@ -122,8 +122,313 @@ html{
 }
 .aboutme h2{
     font-size: 48px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-
+.aboutme .contenido-section p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.aboutme .contenido-section p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+.aboutme .fila{
+    display: flex;
+}
+.aboutme .fila .col
+{
+    width: 50%;
+}
+.aboutme .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.aboutme .fila .col ul{
+    list-style: none;
+}
+.aboutme .fila .col ul li{
+    margin: 12px 0;
+}
+.aboutme .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+.aboutme .fila .col ul li span{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.aboutme .fila .col .contenedor-hobbies{
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutme .fila .col .contenedor-hobbies .Hobbies{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}.aboutme .fila .col .contenedor-hobbies .Hobbies:hover{
+    background-color: #1CB698;
+}
+.aboutme .fila .col .contenedor-hobbies .Hobbies i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.aboutme button{
+    cursor: pointer;
+    background-color: transparent;
+    color: #ccd0cf;
+    border: 2px solid ;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #ccd0cf;
+    position: relative;
+    z-index: 10;
+}
+.aboutme button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.aboutme button:hover .overlay{
+    width: 100%;
+}
+/* SECTION S K I L L S*/
+.Skills{
+    background-color: #11212D;
+    color: #ccd0cf;
+    padding: 50px 20px;
+}
+.Skills .contenido-section{
+    max-width: 1100px;
+    margin: auto;
+}
+.Skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.Skills .fila{
+    display: flex;
+}
+.Skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.Skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.Skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.Skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.Skills .skill .progress{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.Skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+/* SECTION CURRICULUM */
+.curriculum{
+    background-color: #253745;
+    color: #ccd0cf;
+    padding: 50px 20px;
+}
+.curriculum .contenido-section{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.curriculum .fila{
+    display: flex;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #1CB698;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid #1CB698;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #4a5c6a;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/*SECTION PORTFOLIO*/
+.portfolio{
+    background-color: #4a5c6a;
+    color: #ccd0cf;
+    padding: 50px 20px;
+}
+.portfolio .contenido-section{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: space-around;
+}
+.portfolio .galery .proyects{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .galery .proyects img{
+    width: 100%;
+    display: block;
+}
+/*SECTION CONTACT*/
+.contact{
+    background: #9ba8ab;
+    color: #ccd0cf;
+    padding: 50px 0;
+}
+.contact .contenido-section{
+    max-width: 1100px;
+    margin: auto;
+}
+.contact h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contact .fila{
+    display: flex;
+}
+.contact .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contact .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #ccd0cf;
+    color: #ccd0cf;
+    font-size: 18px;
+}
+.contact button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #06141B;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #06141B;
+    position: relative;
+    z-index: 10;
+}
+.contact button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contact button:hover .overlay{
+    width: 100%;
+}
+.contact .col img{
+    width: 100%;
+}
+.contact .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact .col .info ul{
+    list-style: none;
+}
+.contact .col .info ul li{
+    margin-bottom: 20px;
+}
+.contact .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
